@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_1-2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	int numeroUno;
+	int numeroDos;
+	int numeroTres;
+
+	printf("Ingresar un primer numero");
+	scanf("%d", &numeroUno);
+
+	printf("Ingresar un segundo numero");
+	scanf("%d", &numeroDos);
+
+	printf("Ingresar un tercer numero");
+	scanf("%d", &numeroTres);
+
+
+	if(numeroUno > numeroDos && numeroUno < numeroTres)
+	{
+		printf("numero del medio:", numeroUno);
+	}
+
+
+
+	return EXIT_SUCCESS;
+}
