@@ -34,7 +34,7 @@ int main(void) {
 		acumuladorNumeros += numero;
 	}
 	promedio = acumuladorNumeros / i;
-	printf("El promedio de los numeros ingresados es: %d", promedio);
+	printf("El promedio de los numeros ingresados es: %f", promedio);
 
 
 	return EXIT_SUCCESS;
