@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Ejercicio_1-3.c
- Author      : 
+ Author      : Santiago Rodriguez 1D
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -28,15 +28,15 @@ int main(void) {
 	scanf("%d", &numeroTres);
 
 
-	if((numeroUno > numeroDos && numeroUno < numeroTres) && (numeroUno < numeroDos && numeroUno > numeroTres))
+	if((numeroUno > numeroDos && numeroUno < numeroTres) || (numeroUno < numeroDos && numeroUno > numeroTres))
 	{
 		printf("el numero del medio es %d", numeroUno);
 	}
-	else if((numeroDos > numeroUno && numeroDos < numeroTres) && (numeroDos < numeroUno && numeroDos > numeroTres))
+	else if((numeroDos > numeroUno && numeroDos < numeroTres) || (numeroDos < numeroUno && numeroDos > numeroTres))
 	{
 		printf("El numero del medio es %d", numeroDos);
 	}
-	else if((numeroTres > numeroUno && numeroTres < numeroDos) && (numeroTres < numeroUno && numeroTres > numeroDos))
+	else if((numeroTres > numeroUno && numeroTres < numeroDos) || (numeroTres < numeroUno && numeroTres > numeroDos))
 	{
 		printf("El numero del medio es %d", numeroTres);
 	}

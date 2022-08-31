@@ -1,4 +1,22 @@
-09:56:11 **** Incremental Build of configuration Debug for project Ejercicio_2-1 ****
+15:29:19 **** Incremental Build of configuration Debug for project Ejercicio_2-1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_2-1.o" "..\\src\\Ejercicio_2-1.c" 
 gcc -o Ejercicio_2-1.exe "src\\Ejercicio_2-1.o" 
+15:29:49 **** Incremental Build of configuration Debug for project Ejercicio_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_1.o" "..\\src\\Ejercicio_1.c" 
+gcc -o Ejercicio_1.exe "src\\Ejercicio_1.o" 
+15:29:50 **** Incremental Build of configuration Debug for project Ejercicio_1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_1-2.o" "..\\src\\Ejercicio_1-2.c" 
+gcc -o Ejercicio_1-2.exe "src\\Ejercicio_1-2.o" 
+15:29:50 **** Incremental Build of configuration Debug for project Ejercicio_1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_1-3.o" "..\\src\\Ejercicio_1-3.c" 
+gcc -o Ejercicio_1-3.exe "src\\Ejercicio_1-3.o" 
+Info: Nothing to build for Ejercicio_2-1
+Info: Nothing to build for Ejercicio_2-2
+15:29:51 **** Incremental Build of configuration Debug for project Ejercicio_2-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_2-3.o" "..\\src\\Ejercicio_2-3.c" 
+gcc -o Ejercicio_2-3.exe "src\\Ejercicio_2-3.o" 
