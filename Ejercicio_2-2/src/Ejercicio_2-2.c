@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Ejercicio_2-2.c
- Author      : 
+ Author      : Santiago Rodriguez 1D
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
