@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : funcionEjercicio3-5.c
- Author      : 
+ Author      : Rodriguez Santiago
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
