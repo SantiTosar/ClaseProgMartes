@@ -14,6 +14,7 @@
 int restarUno(int numeroUno,  int numeroDos);
 int restarDos (void);
 void restarTres(int primerNumero, int segundoNumero);
+void restarCuatro();
 
 int main(void) {
 	setbuf(stdout, NULL);
@@ -22,9 +23,9 @@ int main(void) {
 	int numeroDos;
 	int resultadoRestaUno;
 	int resultadoRestaDos;
-	int resultadoRestaTres;
 	int primerNumero;
 	int segundoNumero;
+
 
 	printf("Ingresar un primer numero");
 	scanf("%d", &numeroUno);
@@ -37,12 +38,14 @@ int main(void) {
 	resultadoRestaDos = restarDos();
 	printf("El resultado de la segunda resta es %d", resultadoRestaDos);
 
-	printf("Ingrese un primer numero para la tercera resta");
-	scanf("%d", &numeroUno);
-	printf("Ingrese un segundo numero para la tercera resta");
-	scanf("%d", &numeroDos);
+	printf("\nIngresar un primer numero para la tercera resta");
+	scanf("%d", &primerNumero);
 
+	printf("Ingresar un segundo primer numero para la tercera resta");
+	scanf("%d", &segundoNumero);
 
+	restarTres(primerNumero, segundoNumero);
+	restarCuatro();
 
 	return EXIT_SUCCESS;
 }
@@ -58,9 +61,9 @@ int restarDos(void)
 	int segundoNumero;
 	int resultadoSegundaResta;
 
-	printf("\nIngresar primer numero");
+	printf("\nIngresar primer numero para la segunda resta");
 	scanf("%d", &primerNumero);
-	printf("Ingresar segundo numero");
+	printf("Ingresar segundo numero para la segunda resta");
 	scanf("%d", &segundoNumero);
 
 	resultadoSegundaResta = primerNumero - segundoNumero;
@@ -71,13 +74,20 @@ void restarTres(int primerNumero, int segundoNumero)
 {
 	int resultadoTreceraResta;
 
-	printf("Ingrese un primer numero");
-	scanf("%d", primerNumero);
-
-	printf("Ingrese un segundo numero");
-	scanf("%d", &segundoNumero);
-
 	resultadoTreceraResta = primerNumero - segundoNumero;
-	printf("El resultado de la resta es %d", resultadoTreceraResta);
+	printf("El resultado de la tercera resta es %d", resultadoTreceraResta);
+}
+void restarCuatro()
+{
+	int numeroUno;
+	int numeroDos;
+	int resultado;
 
+	printf("\nIngrese primer numero para la cuarta resta");
+	scanf("%d", &numeroUno);
+	printf("Ingrese segundo numero para la cuarta resta");
+	scanf("%d", &numeroDos);
+	resultado = numeroUno - numeroDos;
+
+	printf("El resultado de la resta es %d", resultado);
 }

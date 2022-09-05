@@ -1,4 +1,5 @@
-00:15:15 **** Incremental Build of configuration Debug for project Ejercicio_2-6 ****
+Info: Nothing to build for EjercicioFuncion3-5
+16:57:55 **** Incremental Build of configuration Debug for project EjercicioFuncion3-5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_2-6.o" "..\\src\\Ejercicio_2-6.c" 
-gcc -o Ejercicio_2-6.exe "src\\Ejercicio_2-6.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\EjercicioFuncion3-5.o" "..\\src\\EjercicioFuncion3-5.c" 
+gcc -o EjercicioFuncion3-5.exe "src\\EjercicioFuncion3-5.o" 

@@ -1,130 +1,130 @@
-/*
- ============================================================================
- Name        : Ejercio_2-5.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
+/*Debemos generar el pedido de libretas universitarias a la imprenta para los alumnos
+al regreso a la presencialidad. De cada persona debemos obtener los siguientes
+datos:
+número de legajo (4 cifras sin ceros a la derecha),
+estado civil ('s' para soltero", 'c' para casado o 'v' viudo),
+edad (más de 17),
+año de ingreso (validar por favor)
+y género ('f' para femenino, 'm' para masculino, 'o' para no binario).
+NOTA: El precio por libreta universitaria es de $450.
+Se debe informar (solo si corresponde):
+a) La cantidad de personas mayores de 60 años.
+b) El legajo y edad de la mujer que ingreso hace más tiempo.
+c) Cuanto debe abonar la facultad por las libretas sin el descuento
+d) Si se solicitan mas de 5 libretas hay un 5% de descuento, si se solicitan más de
+10 libretas se hace 10%. Además, por cada alumno mayor de 60 años al valor original
+de la libreta se le hace un 25%. Informar los valores si corresponde.*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#define precioPorLibreta  450
 
 int main(void) {
 	setbuf(stdout, NULL);
 
-	float numeroLegajo;
+	int numeroLegajo;
 	char estadoCivil;
 	int edad;
-	int ingreso;
+	int fechaDeIngreso;
 	char genero;
 	int respuesta;
-	int personasMayoresASesenta;
 
-	int menorFechaDeIngreso;
-	int bandera;
-	float legajoIngresoMujer;
-	int edadIngresoMujer;
+	int personasMayoresSesenta;
 
-	int cantidadLibretas;
-	int libretaUniversitaria;
-	int pagoTotalLibretaUniversitaria;
+	int mujerIngresoMayorTiempo;
+	int edadMujerMayorTiempo;
+	int legajoMujerMayorTiempo;
 
-	int porcentaje;
-	int acumuladorPorcentajeMayorASesenta;
-	int descuento;
-	int descuentoParaMayarores;
+	int contadorLibretas;
+	int totalPagoLibretas;
+
+	int porcentajeDescuento;
+	int precioConDescuento;
+	int contadorAlumnoMayorDeSesenta;
 
 
-	respuesta = 1;
-	personasMayoresASesenta = 0;
-	bandera = 0;
-	cantidadLibretas = 0;
-	libretaUniversitaria = 450;
-	acumuladorPorcentajeMayorASesenta = 0;
+	respuesta = 0;
+	personasMayoresSesenta = 0;
+	contadorLibretas = 0;
 
-	while(respuesta == 1)
+
+	while(respuesta == 0)
 	{
 		printf("Ingrese numero de legajo");
-		scanf("%.0f" , &numeroLegajo );
-
-		printf("Ingrese estado civil s/c/v");
-		scanf("%c", &estadoCivil);
-
-		while(estadoCivil != 's' && estadoCivil != 'c' && estadoCivil != 'v')
+		scanf("%d", &numeroLegajo);
+		while(numeroLegajo < 1111)
 		{
-			printf("Error. Reingrese estado civil valido");
+			printf("\nError. Ingrese un numero mayor a 1111");
+			scanf("%d", &numeroLegajo);
+		}
+
+		printf("Ingrese estado civil");
+		fflush(stdin);
+		scanf("%c", &estadoCivil);
+		while(estadoCivil != 'c' && estadoCivil != 's' && estadoCivil != 'v')
+		{
+			printf("Error. Ingrese estado civil nuevamente");
+			fflush(stdin);
 			scanf("%c", &estadoCivil);
 		}
 
-		printf("ingrese edad");
+		printf("Ingrese edad");
 		scanf("%d", &edad);
-
 		while(edad < 17)
 		{
-			printf("ERROR. Ingrese edad valida");
-			scanf("%d", &edad);
+			printf("Error. Ingrese edad");
+			scanf("%d",  &edad);
 		}
 
-		printf("Ingrese año de ingreso");
-		scanf("%d", &ingreso);
-		while(ingreso > 2022)
+		printf("Ingrese fecha de ingreso");
+		scanf("%d", &fechaDeIngreso);
+		while(fechaDeIngreso > 2022)
 		{
-			printf("Error. Reingrese año de ingreso");
-			scanf("%d", &ingreso);
+			printf("Error. Ingrese fecha de ingreso valido");
+			scanf("%d", &fechaDeIngreso);
 		}
-
 		printf("Ingrese genero");
+		fflush(stdin);
 		scanf("%c", &genero);
-
 		while(genero != 'f' && genero != 'm' && genero != 'o')
 		{
-			printf("Error. Reingrese genero");
+			printf("Error. Reingrese genero valido");
+			fflush(stdin);
 			scanf("%c", &genero);
 		}
 
+		printf("Desea continuar ingresando mas datos? 0 para si, 1 o mas para no");
+		scanf("%d", &respuesta);
+
 		if(edad > 60)
 		{
-			personasMayoresASesenta++;
-			porcentaje = -25;
-			acumuladorPorcentajeMayorASesenta += porcentaje;
+			personasMayoresSesenta++;
 		}
-		switch(genero)
+
+		if(fechaDeIngreso < mujerIngresoMayorTiempo || respuesta == 0)
 		{
-			case 'm':
-				if(ingreso < menorFechaDeIngreso || bandera == 0)
-				{
-					menorFechaDeIngreso = ingreso;
-					legajoIngresoMujer = numeroLegajo;
-					edadIngresoMujer = edad;
-				}
+			mujerIngresoMayorTiempo = fechaDeIngreso;
+			edadMujerMayorTiempo = edad;
+			legajoMujerMayorTiempo = numeroLegajo;
 		}
-		cantidadLibretas ++;
+
+		contadorLibretas++;
+
+		if(contadorLibretas > 5)
+		{
+			porcentajeDescuento = -5;
+		}
+		else if(contadorLibretas > 10)
+		{
+			porcentajeDescuento = -10;
+		}
 	}
-	if(cantidadLibretas > 5)
-	{
-		porcentaje = -5;
-	}
-	else if(cantidadLibretas > 10)
-	{
-		porcentaje = -10;
-	}
-	else
-	{
-		porcentaje = 0;
-	}
+	totalPagoLibretas = contadorLibretas * precioPorLibreta;
+	precioConDescuento = totalPagoLibretas - (totalPagoLibretas * porcentajeDescuento) / 100;
 
-	pagoTotalLibretaUniversitaria = libretaUniversitaria * cantidadLibretas;
-
-	descuento = pagoTotalLibretaUniversitaria - (pagoTotalLibretaUniversitaria * porcentaje ) / 100;
-	descuentoParaMayarores = cantidadLibretas - (pagoTotalLibretaUniversitaria * acumuladorPorcentajeMayorASesenta) / 100;
-
-	printf("La cantidad de personas mayores a 60 es de %d", personasMayoresASesenta);
-	printf("\nEl numero de legajo de la mujer que ingreso hace mas tiempo es %f y su edad es %d", legajoIngresoMujer, edadIngresoMujer);
-	printf("\nEl pago total de la universidad por las libretas universitarias es de %d", pagoTotalLibretaUniversitaria);
-
-
+	printf("La cantidad de personas mayores a 60 es de %d", personasMayoresSesenta);
+	printf("El legajo de la mujer que ingreso hace mas tiempo es %d y su edad es %d", legajoMujerMayorTiempo, edadMujerMayorTiempo);
+	printf("El total a pagar sin descuento es de %d", totalPagoLibretas);
 
 	return EXIT_SUCCESS;
 }
