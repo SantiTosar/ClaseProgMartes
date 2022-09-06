@@ -13,16 +13,16 @@ int main(void) {
 	float respuesta;
 
 	respuesta = pideNumeroFlotante();
-	printf("El numero flotante es %f", respuesta);
+	printf("El numero flotante es %.2f", respuesta);
 
 	return EXIT_SUCCESS;
 }
 float pideNumeroFlotante(void)
 {
-	float numeroFlotante;
+	float numeroIngresado;
 
-	printf("Ingre un numero");
-	scanf("%.2f", &numeroFlotante);
+	printf("Ingrese un numero ");
+	scanf("%f", &numeroIngresado);
 
-	return numeroFlotante;
+	return numeroIngresado;
 }
