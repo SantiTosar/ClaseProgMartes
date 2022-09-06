@@ -1,11 +1,5 @@
 /*
- ============================================================================
- Name        : Ejercicio_2-6.c
- Author      : Santiago Rodriguez
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Ingresar 5 caracteres e informar cuantas letras m (minúsculas) se ingresaron.
  */
 
 #include <stdio.h>

@@ -1,6 +1,6 @@
-12:19:36 **** Rebuild of configuration Debug for project Ejercicio_3-3 ****
+Info: Nothing to build for Ejerciocio_2-5
+14:30:14 **** Rebuild of configuration Debug for project Ejercicio_2-6 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_3-3.o" "..\\src\\Ejercicio_3-3.c" 
-gcc -o Ejercicio_3-3.exe "src\\Ejercicio_3-3.o" 
-Info: Nothing to build for Ejercicio_3-3
-Info: Nothing to build for Ejercicio_3-3
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_2-6.o" "..\\src\\Ejercicio_2-6.c" 
+gcc -o Ejercicio_2-6.exe "src\\Ejercicio_2-6.o" 
+Info: Nothing to build for Ejercicio_2-6

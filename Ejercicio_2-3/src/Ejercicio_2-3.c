@@ -1,11 +1,6 @@
 /*
- ============================================================================
- Name        : Ejercicio_2-3.c
- Author      : Santiago Rodriguez 1D
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+Ejercicio 2-3: Usando el concepto de operadores lógicos booleanos en el condicional.
+Solicitar un número al usuario e informar si el número es par o impar.
  */
 
 #include <stdio.h>

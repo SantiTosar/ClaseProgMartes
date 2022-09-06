@@ -1,11 +1,7 @@
 /*
- ============================================================================
- Name        : Ejercicio_1.c
- Author      : Santiago Rodriguez 1D
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+Ejercicio 1-1: Ingresar dos números enteros entre -50 y 100, sumarlos y mostrar el
+resultado. Ejemplo: Si ingresamos 3 y 2 el programa mostrará: “La suma entre 3 y 2
+da como resultado 5”
  */
 
 #include <stdio.h>

@@ -1,11 +1,7 @@
 /*
- ============================================================================
- Name        : Ejercicio_2-2.c
- Author      : Santiago Rodriguez 1D
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+Ejercicio 2-2: Ingresar números enteros, hasta que el usuario pida. Mostrar:
+a) El promedio de los positivos y su mínimo.
+b) El promedio de los negativos y su máximo.
  */
 
 #include <stdio.h>

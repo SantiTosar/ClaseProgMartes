@@ -122,9 +122,9 @@ int main(void) {
 	totalPagoLibretas = contadorLibretas * precioPorLibreta;
 	precioConDescuento = totalPagoLibretas - (totalPagoLibretas * porcentajeDescuento) / 100;
 
-	printf("La cantidad de personas mayores a 60 es de %d", personasMayoresSesenta);
-	printf("El legajo de la mujer que ingreso hace mas tiempo es %d y su edad es %d", legajoMujerMayorTiempo, edadMujerMayorTiempo);
-	printf("El total a pagar sin descuento es de %d", totalPagoLibretas);
+	printf("\nLa cantidad de personas mayores a 60 es de %d", personasMayoresSesenta);
+	printf("\nEl legajo de la mujer que ingreso hace mas tiempo es %d y su edad es %d", legajoMujerMayorTiempo, edadMujerMayorTiempo);
+	printf("\nEl total a pagar sin descuento es de %d", totalPagoLibretas);
 
 	return EXIT_SUCCESS;
 }
