@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Ejercicio3-1.c
+ Name        : Ejercicio.c
  Author      : Santiago Rodriguez
  Version     :
  Copyright   : Your copyright notice
@@ -10,21 +10,25 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-int muestraNumero(int numero);
+
+float pideNumeroFlotante();
 
 int main(void) {
 	setbuf(stdout, NULL);
-	int numero;;
-	int resultado;
 
-	printf("Ingrese cantidad papeles");
-	scanf("%d", &numero);
-	resultado = muestraNumero(numero);
-	printf("El resultado es %d", resultado);
+	float respuesta;
 
-	return 0;
+	respuesta = pideNumeroFlotante();
+	printf("El numero flotante es %f", respuesta);
+
+	return EXIT_SUCCESS;
 }
-int muestraNumero(int numero)
+float pideNumeroFlotante(void)
 {
-	return numero;
+	float numeroFlotante;
+
+	printf("Ingre un numero");
+	scanf("%.2f", &numeroFlotante);
+
+	return numeroFlotante;
 }

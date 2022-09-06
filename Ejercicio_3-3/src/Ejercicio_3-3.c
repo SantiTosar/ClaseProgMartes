@@ -1,7 +1,7 @@
 /*
  ============================================================================
- Name        : Ejercicio3-1.c
- Author      : Santiago Rodriguez
+ Name        : Ejercicio_3-3.c
+ Author      : 
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -10,21 +10,31 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-int muestraNumero(int numero);
+
+int determinaNumeroPar();
 
 int main(void) {
 	setbuf(stdout, NULL);
-	int numero;;
+
+	int numeroIngresado;
 	int resultado;
 
-	printf("Ingrese cantidad papeles");
-	scanf("%d", &numero);
-	resultado = muestraNumero(numero);
+	printf("Ingrese un numero");
+	scanf("%d", &numeroIngresado);
+
+	resultado = determinaNumeroPar(numeroIngresado);
 	printf("El resultado es %d", resultado);
 
-	return 0;
+	return EXIT_SUCCESS;
 }
-int muestraNumero(int numero)
+int determinaNumeroPar(int numero)
 {
-	return numero;
+	if(numero % 2 == 0)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
 }
