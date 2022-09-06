@@ -1,11 +1,6 @@
 /*
- ============================================================================
- Name        : Ejercicio_3-3.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Ejercicio 3-3: Crear una función que permita determinar si un número es par o no. La
+función retorna 1 en caso afirmativo y 0 en caso contrario. Probar en el main.
  */
 
 #include <stdio.h>

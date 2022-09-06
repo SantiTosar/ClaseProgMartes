@@ -1,11 +1,5 @@
 /*
- ============================================================================
- Name        : Ejercicio.c
- Author      : Santiago Rodriguez
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Ejercicio 3-2: Crear una función que pida el ingreso de un flotante y lo retorne.
  */
 
 #include <stdio.h>

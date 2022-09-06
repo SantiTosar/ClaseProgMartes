@@ -1,11 +1,10 @@
 /*
- ============================================================================
- Name        : funcionEjercicio3-5.c
- Author      : Rodriguez Santiago
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Ejercicio 3-5: Realizar un programa en donde se puedan utilizar los prototipos de la
+función Restar en sus 4 combinaciones.
+ int Restar1(int, int);
+ int Restar2(void);
+ void Restar3(int, int);
+ void Restar4(void);
  */
 
 #include <stdio.h>

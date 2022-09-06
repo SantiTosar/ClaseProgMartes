@@ -1,11 +1,6 @@
 /*
- ============================================================================
- Name        : Ejercicio3-1.c
- Author      : Santiago Rodriguez
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+Ejercicio 3-1: Crear una función que muestre por pantalla el número entero que
+recibe como parámetro.
  */
 
 #include <stdio.h>
