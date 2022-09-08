@@ -74,7 +74,7 @@ int main(void) {
 		break;
 
 		case 4:
-			printf("Desea salir del menu ? 1/0");
+			printf("Desea salir del menu ? 1 para salir 0 para repetir");
 			fflush(stdin);
 			scanf("%d", &respuesta);
 

@@ -9,56 +9,32 @@ por pantalla.
 #include <stdio.h>
 #include <stdlib.h>
 
-int solicitaNumero(int numero);
-//int validaNumero(int numeroA, int numeroB);
+void operacion(int numero1, int numero2);
 
 int main(void) {
 	setbuf(stdout, NULL);
 
 	int numero1;
 	int numero2;
+	//int operaciones;
 
 	printf("Ingrese un primer numero");
 	scanf("%d", &numero1);
-	printf("Ingrese un segundo numero");
-	scanf("%d", &numero2);
-
 	while(numero1 < 10 || numero1 > 100)
 	{
-		printf("Ingrese nuevamente el primer numero");
+		printf("Error. Reingrese el primer numero");
 		scanf("%d", &numero1);
 	}
+	printf("Ingrese un segundo numero");
+	scanf("%d", &numero2);
 	while(numero2 < 10 || numero2 > 100)
 	{
-		printf("Ingrese nuevamente el segundo numero");
+		printf("Error. Reingrese el segundo numero numero");
 		scanf("%d", &numero2);
 	}
 
+	operacion(numero1, numero2);
 
 	return EXIT_SUCCESS;
 }
-int solicitaNumero(int numero)
-{
 
-
-
-	return 0;
-}
-
-/*int validaNumero(int numeroA, int numeroB)
-{
-	while(numeroA < 10 || numeroA > 100)
-	{
-		printf("Error. Reingrese el primer numero");
-		scanf("%d", &numeroA);
-	}
-
-	while( numeroB < 10 || numeroB > 100)
-	{
-		printf("Error. Reingrese segundo numero");
-		scanf("%d", &numeroB);
-	}
-
-	return numeroA, numeroB;
-}
-*/
