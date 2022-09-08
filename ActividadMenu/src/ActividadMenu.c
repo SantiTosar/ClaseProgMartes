@@ -74,23 +74,17 @@ int main(void) {
 		break;
 
 		case 4:
-			printf("Desea ingresar salir del menu ? 1/0");
-			fflush(respuesta);
+			printf("Desea salir del menu ? 1/0");
+			fflush(stdin);
 			scanf("%d", &respuesta);
 
 			if(respuesta == 1)
 			{
 				printf("Salio del programa");
 			}
-			else if(respuesta == 0)
-			{
-				opcion = 0;
-			}
 			else
 			{
-				printf("Error. Reingrese caracter");
-				//fflush(respuesta);
-				scanf("%d", &respuesta);
+				opcion = 0;
 			}
 
 		break;
