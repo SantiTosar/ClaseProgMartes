@@ -1,6 +1,4 @@
-17:10:51 **** Incremental Build of configuration Debug for project Ejercicio_3-6 ****
+11:23:14 **** Incremental Build of configuration Debug for project ActividadMenu ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_3-6.o" "..\\src\\Ejercicio_3-6.c" 
-gcc -o Ejercicio_3-6.exe "src\\Ejercicio_3-6.o" 
-Info: Nothing to build for Ejercicio_3-6
-Info: Nothing to build for Ejercicio_3-6
+gcc -o ActividadMenu.exe "src\\ActividadMenu.o" "src\\menu.o" 
+Info: Nothing to build for ActividadMenu

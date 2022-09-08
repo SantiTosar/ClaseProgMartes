@@ -8,7 +8,7 @@ por pantalla.
 #include <stdio.h>
 #include <stdlib.h>
 
-float pideValidaNumero(float numero);
+float validaNumero(float numero);
 float realizarDescuento();
 
 int main(void) {
@@ -21,7 +21,7 @@ int main(void) {
 
 	return EXIT_SUCCESS;
 }
-float pideValidaNumero(float numero)
+float validaNumero(float numero)
 {
 	while(numero < 10 || numero > 100)
 	{
@@ -32,16 +32,16 @@ float pideValidaNumero(float numero)
 }
 float realizarDescuento()
 {
-	float numeroIngresado;
+	float numero1;
 	int porcentaje;
 	float resultado;
 
 	printf("Ingrese un numero");
-	scanf("%f", &numeroIngresado);
+	scanf("%f", &numero1);
 
 	porcentaje = -5;
 
-	resultado = pideValidaNumero(numeroIngresado) + (pideValidaNumero(numeroIngresado) * porcentaje)/100;
+	resultado = validaNumero(numero1) + (validaNumero(numero1) * porcentaje)/100;
 
 	return resultado;
 }
