@@ -8,8 +8,7 @@ por pantalla.
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void operacion(int numero1, int numero2);
+#include "operacion.h"
 
 int main(void) {
 	setbuf(stdout, NULL);

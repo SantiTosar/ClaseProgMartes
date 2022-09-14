@@ -64,6 +64,7 @@ int main(void) {
 			}
 			else if(banderaProcesar == 0)
 			{
+				banderaFinalizar = 0;
 				printf("Debe de procesar antes de finalizar\n");
 			}
 			else
